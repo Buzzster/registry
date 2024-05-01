@@ -1,0 +1,14 @@
+#!/bin/sh
+
+IP=""
+PEER=""
+
+case "`uname`" in
+	Linux)
+		ip link set "$INTERFACE" up
+		ip addr add "$IP" peer "$PEER" dev "$INTERFACE"
+		;;
+	*BSD)
+		ifconfig "$INTERFACE" "$IP" "$PEER"
+		;;
+esac

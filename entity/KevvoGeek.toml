@@ -1,0 +1,9 @@
+name = "KevvoGeek"
+babel = ["es-ES"]
+
+[contact]
+email = "kevvogeek@buzzster.co.ul"
+telegram = "KevvoGeek"
+
+[persona]
+pgp = "DB37316F374ECE477CDCC009B02B06FB8221560F"

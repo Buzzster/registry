@@ -1,0 +1,29 @@
+# Template file for the route registry (route/)
+# Before submission, please:
+# - Rename the file to "AS<ASN>.toml", without the quotes.
+# - Remove any blank lines, comments, and unneeded options.
+
+# Multiple IP prefixes can be announced in one file: start every prefix with its
+# CIDR notation as the table name.
+["10.54.0.0/32"]
+
+# IP network usage (mandatory). Possible values:
+# - subnet: this is a subnetwork announced by this AS.
+# - loopback: this is a loopback IP (mainly used in anycast). The IP prefix should be a /32 (ipv4) or /64 (ipv6) one. Overlap check is skipped.
+# If you have no idea what this is, please fill in "subnet".
+# Any other value is considered invalid and will result in this CIDR being skipped entirely.
+type = ""
+
+# IP network name (mandatory).
+name = ""
+
+# IP network description (optional).
+description = ""
+
+# Max length (optional). Default values: 29 for ipv4, 64 for ipv6
+max-len = 29
+
+# The supernet of this IP network (optional). Overlapping IP prefixes are
+# regarded as an error, so if this IP network is a subnet of another one, write
+# their IP prefix here.
+supernet = ""

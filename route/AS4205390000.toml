@@ -1,0 +1,38 @@
+["10.54.0.0/24"]
+type = "subnet"
+name = "RESERVED"
+description = "Reserved"
+
+["10.54.1.0/24"]
+type = "subnet"
+name = "MAIN"
+description = "LAN 1"
+
+["10.54.2.0/24"]
+type = "subnet"
+name = "Messed-up Network"
+
+["10.54.16.0/24"]
+type = "subnet"
+name = "KevvoGeek ZeroTier-One Hub"
+description = ""
+
+["10.54.110.0/24"]
+type = "subnet"
+name = "Home Network"
+description = "Home LAN (Taichung)"
+
+["10.54.255.4/32"]
+type = "loopback"
+name = "fsnvax"
+description = "Debian/frr"
+
+["fd10:cd54:0000::/48"]
+type = "subnet"
+name = "Buzzster Origin 1"
+description = "KevvoGeek's Network"
+
+["fd10:cd54:5f37:59df::/64"]
+type = "subnet"
+name = "Buzzster Origin 2"
+description = "KevvoGeek's Network"

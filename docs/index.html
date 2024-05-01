@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-Hant" lang="zh-Hant">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Buzzster</title>
+		<link rel="stylesheet" type="text/css" href="neostyle.css" />
+		<link rel="icon" href="icon.png" />
+	</head>
+	<body>
+<h1>Buzzster</h1>
+
+<p>Yet another VPN network ready for peering!<br/>
+This network is connected with <a href="https://dn42.net">DN42</a><br/>
+Git Repo. <a href="https://github.com/BuzzsterCloud/Buzzster">here</a><br/>
+Pull requests are welcomed!<br/>
+Working language: <code>zh_* / en_*</code></p>
+
+<h2>ROA</h2>
+
+<p><a href="https://roa.stercloud.tw">https://roa.stercloud.tw</a></p>
+
+<h2>IXs</h2>
+
+<pre><code>neovax.stercloud.tw      (10.54.110.1,  ASN 4201270000)
+fsnvax.stercloud.tw      (10.54.16.240, ASN 4201270000)
+jpn.ster.jerryxiao.cc        (10.54.8.193,  ASN 4201270006)
+s.aureus.ga         (10.54.8.185,  ASN 4201270007)
+</code></pre>
+
+<h2>Address Allocation</h2>
+
+<p>All IPv4 addresses are under the range 10.54.0.0/16<br/>
+All IPv6 addresses are under the range fd10:cd54::/32<br/>
+see <a href="https://github.com/BuzzsterCloud/Buzzster/tree/master/route">route</a>
+and <a href="https://github.com/BuzzsterCloud/Buzzster/tree/master/route6">route6</a> for allocated subnet.</p>
+
+<h2>DNS</h2>
+
+<p>DNS Anycast is currently on <code>10.54.255.54</code> for IPv4 and <code>fd10:cd54:53:53::</code> for IPv6. All domain names are under &ldquo;.ster&rdquo;.</p>
+
+<h2>Certificate Authority</h2>
+
+<p>Root certificate can be downloaded from <a href="https://github.com/BuzzsterCloud/Buzzster/blob/master/ca/buzzster.crt">here</a>. An acmev2-api is available at <code>https://acme.ster/acme/acme/directory</code>.</p>
+
+<h2>Files and Directories</h2>
+
+<pre><code>nodes.dot   Connection graph
+asn/        BGP AS Number allocation
+entity/     Entitys
+route/      Network subnet allocation
+vpn/        VPN configuration examples (Tinc &amp; WireGuard)
+dns/        Bind9 DNS zone files and example configuration
+</code></pre>
+	</body>
+</html>

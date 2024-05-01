@@ -1,0 +1,265 @@
+; Buzzster DNS Record
+$TTL	3600
+@	IN	SOA	root-dns.ster. root.ster. (
+            4096    ; Serial
+             900    ; Refresh
+             900    ; Retry
+           86400    ; Expire
+             900 )  ; Negative Cache TTL
+;
+
+; Important Records
+@                         IN    NS       root-dns.ster.
+@                         IN    TXT      "Full-Table BGP on the way (tm)"
+root                      IN    CNAME    ster.
+neko                      IN    TXT      "helloworld"
+telegram                  IN    TXT      "https://t.me/BuzzsterVPN"
+root-dns                  IN    A        10.54.255.53
+root-dns                  IN    AAAA     fd10:cd54:ffff:53::
+dns                       IN    A        10.54.255.54
+dns                       IN    AAAA     fd10:cd54:53:53::
+acme                      IN    A        10.54.18.30
+acme                      IN    AAAA     fd10:cd54:53:223::1
+
+BuzzsterVAX                    IN    A        10.54.2.22
+BuzzsterVAX                    IN    AAAA     fd10:cd54:5f37:59df::2:22
+BuzzsterSystem                 IN    A        10.54.2.1
+BuzzsterSystem                 IN    AAAA     fd10:cd54:5f37:59df::2:1
+BuzzsterRouter                 IN    A        10.54.2.127
+BuzzsterRouter                 IN    AAAA     fd10:cd54:5f37:59df::2:127
+BuzzsterWRT                    IN    A        10.54.1.1
+BuzzsterWRT                    IN    AAAA     fd10:cd54:5f37:59df::1:1
+BuzzsterWorkstation            IN    A        10.54.1.16
+BuzzsterWorkstation            IN    AAAA     fd10:cd54:5f37:59df::1:16
+BuzzsterKSKB                   IN    A        10.54.16.76
+BuzzsterKSKB                   IN    AAAA     fd10:cd54:5f37:59df::16:76
+fsnvax                    IN    A        10.54.255.4
+fsnvax                    IN    AAAA     fd10:cd54:5f37:59df::255:4
+BuzzsterPi                     IN    A        10.54.110.64
+BuzzsterPi                     IN    AAAA     fd10:cd54:5f37:59df::110:64
+BuzzsterRTK                    IN    A        10.54.16.31
+BuzzsterRTK                    IN    AAAA     fd10:cd54:5f37:59df::16:31
+BuzzsterServer                 IN    A        10.54.2.86
+BuzzsterServer                 IN    AAAA     fd10:cd54:5f37:59df::2:86
+PTYRouter                 IN    A        10.54.2.65
+PTYRouter                 IN    AAAA     fd10:cd54:5f37:59df::2:65
+
+home.edwardp              IN    A        10.54.26.1
+home.edwardp              IN    AAAA     fd10:cd54:2f2f:2333::1
+hkg.edwardp               IN    A        10.54.18.34
+hkg.edwardp               IN    AAAA     fd10:cd54:2f2f:2334::1
+edwardp                   IN    CNAME    home.edwardp
+mc.edwardp                IN    CNAME    home.edwardp
+live.edwardp              IN    CNAME    home.edwardp
+dynmap.edwardp            IN    CNAME    home.edwardp
+schem.edwardp             IN    CNAME    home.edwardp
+
+tv                        IN    A        10.54.15.58
+
+lily                      IN    A        10.54.8.137
+lily                      IN    AAAA     fd10:cd54:ba7e::137
+
+undefiend.moe             IN    A        10.54.88.1
+*.undefined.moe           IN    A        10.54.88.1
+undefiend.moe             IN    AAAA     fd10:cd54:88::1
+*.undefined.moe           IN    AAAA     fd10:cd54:88::1
+
+; DELEGATED ZONES
+jerry                     IN    NS       ns1.jerry
+jerry                     IN    NS       ns2.jerry
+jerry                     IN    NS       ns3.jerry
+jerry                     IN    DS       18792 13 2 2F335456EEE70FC4833886E5EEDC28E7195E90E2A337860B3E805D5EB9F3A804
+ns1.jerry                 IN    A        10.54.8.193
+ns1.jerry                 IN    AAAA     fd10:cd54:53::1
+ns2.jerry                 IN    A        10.54.8.216
+ns2.jerry                 IN    AAAA     fd10:cd54:53:100::1
+ns3.jerry                 IN    A        10.54.8.208
+ns3.jerry                 IN    AAAA     fd10:cd54:53:200::1
+
+lantian                   IN    NS       ns-anycast.lantian
+lantian                   IN    NS       ns1.lantian
+lantian                   IN    NS       ns2.lantian
+lantian                   IN    NS       ns3.lantian
+lantian                   IN    NS       ns4.lantian
+lantian                   IN    NS       ns5.lantian
+lantian                   IN    DS       47346 13 1 BF0E344C96838564CF9DBA3889AAE6E3DA5F6835
+lantian                   IN    DS       47346 13 2 1023D2C40803BA13F2148BC67A09E50A3157EE3E7B1DC2C22041D3B981E976E3
+lantian                   IN    DS       47346 13 4 1DBFA42E78F699241042E18061218CC2DEA7A69884E634165CE99AA5C65ECF4DF7DA16B382494A5AE7D781AB9A3BB1C5
+ns-anycast.lantian        IN    A        10.54.10.254
+ns-anycast.lantian        IN    AAAA     fd10:cd54:10:2547::54
+ns1.lantian               IN    A        10.54.10.1
+ns1.lantian               IN    AAAA     fd10:cd54:10:1::1
+ns2.lantian               IN    A        10.54.10.3
+ns2.lantian               IN    AAAA     fd10:cd54:10:3::1
+ns3.lantian               IN    A        10.54.10.8
+ns3.lantian               IN    AAAA     fd10:cd54:10:8::1
+ns4.lantian               IN    A        10.54.10.2
+ns4.lantian               IN    AAAA     fd10:cd54:10:2::1
+ns5.lantian               IN    A        10.54.10.9
+ns5.lantian               IN    AAAA     fd10:cd54:10:9::1
+
+iedon                     IN    NS       ns.iedon
+ns.iedon                  IN    A        10.54.21.1
+
+staph                     IN    NS       ns1.staph
+staph                     IN    NS       ns2.staph
+staph                     IN    DS       64592 13 2 1AF24492D8FAE84D99E05C9B9088DDB8A82003F3301A53F35EFEC1627BEADDBA
+ns1.staph                 IN    A        10.54.8.185
+ns1.staph                 IN    AAAA     fd10:cd54:7::1
+ns2.staph                 IN    A        10.54.8.190
+ns2.staph                 IN    AAAA     fd10:cd54:7::6
+aoscnet                   IN    NS       ns1.aoscnet
+aoscnet                   IN    NS       ns2.aoscnet
+aoscnet                   IN    DS       27134 13 2 57145BCB903E0F0060BF94AA4EE5894DCA19D64E6B455A1C1864DA0FD4BA64E2
+ns1.aoscnet               IN    A        10.54.7.251
+ns1.aoscnet               IN    AAAA     fd10:cd54:7:2672::1:1
+ns2.aoscnet               IN    A        10.54.7.252
+ns2.aoscnet               IN    AAAA     fd10:cd54:7:2672::1:3
+
+yura                      IN    NS       ns.yura
+yura                      IN    NS       ns1.yura
+yura                      IN    NS       ns2.yura
+yura                      IN    DS       63132 15 1 0E03FCE3B54D9FC84A12CC6CF36A71158AA88933
+yura                      IN    DS       63132 15 2 75C0A884399D5ECA686EC35287CDAC2A756D94C30815A0055B88B068F3C947A7
+yura                      IN    DS       63132 15 4 C4BB952FC40FA0185499A4E613864A29FC06FC8014299F2F3702A6E6420D3C054545A11566B95211C2C678F1F6F255F3
+ns.yura                   IN    A        10.54.127.125
+ns.yura                   IN    AAAA     fd10:cd54:127:53::
+ns1.yura                  IN    AAAA     fd10:cd54:127:53a::1
+ns2.yura                  IN    AAAA     fd10:cd54:127:53b::1
+
+potato                    IN    NS       ns1.potato
+potato                    IN    NS       ns2.potato
+potato                    IN    NS       ns3.potato
+potato                    IN    DS       6841 7 2 B02CE6960F3FFC54AAAEA4FA26F050D911A7049158B0B35350E74CC78F04E183
+fixmix                    IN    NS       ns1.potato
+fixmix                    IN    NS       ns2.potato
+fixmix                    IN    NS       ns3.potato
+fixmix                    IN    DS       5223 7 2 BF26524942A4FAFA08C0DDF71C2E56EDC3BC82EDBA8F86B0DF6070B378919840
+david                     IN    NS       ns1.potato
+david                     IN    NS       ns2.potato
+david                     IN    NS       ns3.potato
+david                     IN    DS       14533 7 2 914D786DACF1C5D2C953515A425FB4BA4D644D7DECA7B6B60BBC487323479039
+ns1.potato                IN    A        10.54.66.59
+ns2.potato                IN    A        10.54.66.54
+ns3.potato                IN    A        10.54.66.52
+ns1.potato                IN    AAAA     fd10:cd54:aa66:1010::1
+ns2.potato                IN    AAAA     fd10:cd54:aa66:2010::1
+ns3.potato                IN    AAAA     fd10:cd54:aa66:3010::1
+
+bear                      IN    NS       ns1.bear
+koala                     IN    NS       ns1.bear
+ns1.bear                  IN    AAAA     fd42:e621::53
+
+iwarp                     IN    NS       ns1.iwarp
+iwarp                     IN    NS       ns2.iwarp
+go                        IN    NS       ns1.iwarp
+go                        IN    NS       ns2.iwarp
+yux                       IN    NS       ns1.iwarp
+yux                       IN    NS       ns2.iwarp
+ns1.iwarp                 IN    A        10.54.30.53
+ns1.iwarp                 IN    AAAA     fd10:cd54:30:ac53::1
+ns2.iwarp                 IN    A        10.54.30.54
+ns2.iwarp                 IN    AAAA     fd10:cd54:30:ac54::1
+
+an                        IN    NS       ns1.an.dn42.
+
+dnswol                    IN    NS       ns1.dnswol
+dnswol                    IN    NS       ns2.dnswol
+dnswol                    IN    DS       53285 14 1 88971c954d18aa1224a1b01e54c81dc6cd71a86e
+dnswol                    IN    DS       53285 14 2 d782d7d9afec4e20082913fe2f23fd9e2c0e0ad7206fa389cadc4050d11b7e80
+dnswol                    IN    DS       53285 14 4 1c0fcf050b4000de0648a8e25a8e809e35b7501c846ad785f07e2c4296610c305d217cb5113c34f937f62780e82b5e98
+ns1.dnswol                IN    A        10.54.99.50
+ns1.dnswol                IN    AAAA     fd10:cd54:99::32:1
+ns2.dnswol                IN    A        10.54.99.51
+ns2.dnswol                IN    AAAA     fd10:cd54:99::33:1
+
+tsingyao                  IN    NS       ns1.dnswol
+tsingyao                  IN    NS       ns2.dnswol
+
+leedagee                  IN    NS       ns.leedagee
+ns.leedagee               IN    A        10.54.8.129
+ns.leedagee               IN    AAAA     fd10:cd54:23::1
+
+kskb                      IN    NS       ns.kskb
+ns.kskb                   IN    A        10.54.111.15
+ns.kskb                   IN    AAAA     fd10:cd54:e00f:f::1
+
+hmn                       IN    NS       ns0.hmn
+ns0.hmn                   IN    A        10.54.45.233
+ns0.hmn                   IN    AAAA     fd10:cd54:45:233::1
+
+hjt                       IN    NS       ns0.hmn
+
+hanako                    IN    NS       ns.hanako
+ns.hanako                 IN    A        10.54.80.80
+ns.hanako                 IN    AAAA     fd10:cd54:80:aa00::1
+
+saru                      IN    NS       lb.ns.saru
+saru                      IN    DS       42159 13 2 D8AF3E06E8D4E21C1FFA85CBE3DEC6E7DA06095283109D4289C4BBDF23283E1B
+lb.ns.saru                IN    A        10.54.39.193
+lb.ns.saru                IN    AAAA     fd10:cd54:39:a000::3901
+lb.ns.saru                IN    AAAA     fd10:cd54:39:a001::3901
+lb.ns.saru                IN    AAAA     fd10:cd54:39:b000::3901
+lb.ns.saru                IN    AAAA     fd10:cd54:39:c000::3901
+
+luna                      IN    NS       anycast.luna
+anycast.luna              IN    A        172.23.180.1
+anycast.luna              IN    AAAA     fd42:1877:222c::1
+
+bandura                   IN    NS       ns1.bandura
+ns1.bandura               IN    A        10.54.149.242
+ns1.bandura               IN    AAAA     fd10:cd54:fc31::42
+bandura                   IN    DS       30344 15 2 92716A3A5226CDE664828B1346D3F621610E840D39070EB584A992552884B110
+
+syc                       IN    NS       ns.syc
+ns.syc                    IN    A        10.54.37.1
+ns.syc                    IN    AAAA     fd10:cd54:37::1
+
+nevlezay                  IN    NS       ns1.nevlezay
+nevlezay                  IN    NS       ns2.nevlezay
+ns1.nevlezay              IN    A        10.54.192.0
+ns2.nevlezay              IN    A        10.54.192.1
+
+razu                      IN    NS       ns.razu
+ns.razu                   IN    A        10.54.134.53
+ns.razu                   IN    AAAA     fd10:cd54:2032::53
+
+wtm                       IN    NS       ns1.wtm
+wtm                       IN    NS       ns2.wtm
+windtalker                IN    NS       ns1.wtm
+windtalker                IN    NS       ns2.wtm
+ns1.wtm                   IN    A        10.54.20.222
+ns1.wtm                   IN    AAAA     fd10:cd54:66::222
+ns2.wtm                   IN    A        10.54.20.223
+ns2.wtm                   IN    AAAA     fd10:cd54:66::223
+
+ns1.hawkins               IN    A        10.54.217.14
+ns1.hawkins               IN    AAAA     fd10:cd54:217:53::1
+ns2.hawkins               IN    A        10.54.217.15
+ns2.hawkins               IN    AAAA     fd10:cd54:217:53::2
+hawkins                   IN    NS       ns1.hawkins
+hawkins                   IN    NS       ns2.hawkins
+
+; AUTOGENERATED
+
+; dnskey
+@ IN DNSKEY 257 3 13 jDd4k21xTgqOFqtvQkeqdQs/RH5+SU+vFchqnOHk5yaEL6EQDOKNuYJ2 C4ld+tVHf007GgbKX6BC68uMU8iGIg==
+@ IN DNSKEY 256 3 13 oUcsKJykGOVwz58smxaygPFhm4PZEPKIukPO+HKbEBwGFnIbcamMsXFJ Gp2Wi7T5a0Z61IT/VxWLV4D7UhcAvg==
+@ IN DNSKEY 257 3 15 eE/0MWGb7wYP4U/kf5mXCbE8tGIwo1U++dp22Fumo+g=
+@ IN DNSKEY 256 3 15 oAzPHJyXlawMglhQ6ymkj6Xx3zX5Awon0nyP9V3+DTc=
+
+; AUTOGENERATED
+
+; dnskey
+@ IN DNSKEY 257 3 13 jDd4k21xTgqOFqtvQkeqdQs/RH5+SU+vFchqnOHk5yaEL6EQDOKNuYJ2 C4ld+tVHf007GgbKX6BC68uMU8iGIg==
+@ IN DNSKEY 256 3 13 oUcsKJykGOVwz58smxaygPFhm4PZEPKIukPO+HKbEBwGFnIbcamMsXFJ Gp2Wi7T5a0Z61IT/VxWLV4D7UhcAvg==
+@ IN DNSKEY 257 3 15 eE/0MWGb7wYP4U/kf5mXCbE8tGIwo1U++dp22Fumo+g=
+@ IN DNSKEY 256 3 15 oAzPHJyXlawMglhQ6ymkj6Xx3zX5Awon0nyP9V3+DTc=
+
+; AUTOGENERATED
+
+; dnskey
+@ IN DNSKEY 257 3 13 jDd4k21xTgqOFqtvQkeqdQs/RH5+SU+vFchqnOHk5yaEL6EQDOKNuYJ2 C4ld+tVHf007GgbKX6BC68uMU8iGIg==
+@ IN DNSKEY 256 3 13 oUcsKJykGOVwz58smxaygPFhm4PZEPKIukPO+HKbEBwGFnIbcamMsXFJ Gp2Wi7T5a0Z61IT/VxWLV4D7UhcAvg==
+@ IN DNSKEY 257 3 15 eE/0MWGb7wYP4U/kf5mXCbE8tGIwo1U++dp22Fumo+g=
+@ IN DNSKEY 256 3 15 oAzPHJyXlawMglhQ6ymkj6Xx3zX5Awon0nyP9V3+DTc=

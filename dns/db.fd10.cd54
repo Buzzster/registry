@@ -1,0 +1,117 @@
+; Buzzster DNS Record
+$TTL	3600
+@	IN	SOA	root-dns.ster. root.ster. (
+            4096    ; Serial
+             900    ; Refresh
+             900    ; Retry
+           86400    ; Expire
+             900 )  ; Negative Cache TTL
+;
+@                                                      IN    NS     root-dns.ster.
+
+; Buzzster Origin (AS4201270000)
+2.2.0.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterVAX.ster.
+1.0.0.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterSystem.ster.
+7.2.1.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterRouter.ster.
+1.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterWRT.ster.
+6.1.0.0.1.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterWorkstation.ster.
+6.7.0.0.6.1.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterKSKB.ster.
+4.0.0.0.5.5.2.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    fsnvax.ster.
+4.6.0.0.0.1.1.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterPi.ster.
+1.3.0.0.6.1.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterRTK.ster.
+6.8.0.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    BuzzsterServer.ster.
+5.6.0.0.2.0.0.0.0.0.0.0.0.0.0.0.f.d.9.5.7.3.f.5        IN    PTR    PTYRouter.ster.
+; End of AS4201270000
+
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.c.3.c.1.3.3.2.0        IN    PTR    liqingge.router.br-koishi.lo.she.as141706.koishi.moe.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.2.f.2        IN    PTR    home.edwardp.ster.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.3.3.2.f.2.f.2        IN    PTR    home.edwardp.ster.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.4.3.3.2.f.2.f.2        IN    PTR    hkg.edwardp.ster.
+
+7.3.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.e.7.a.b        IN    PTR    lily.ster.
+
+; Loopback Addresses
+
+0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.5.0.0.f.f.f.f        IN    PTR    root-dns.ster.
+
+; DELEGATED ZONES
+3.5.0.0                                                IN    NS     ns1.jerry.ster.
+3.5.0.0                                                IN    NS     ns2.jerry.ster.
+3.5.0.0                                                IN    NS     ns3.jerry.ster.
+3.5.0.0                                                IN    DS     53626 13 2 F7F6AFCCA1CEC26E2A6EE9FAC9E11975260F00B8DC287D0B0FF428F775C62C5D
+
+0.1.0.0                                                IN    NS     ns-anycast.lantian.ster.
+0.1.0.0                                                IN    NS     ns1.lantian.ster.
+0.1.0.0                                                IN    NS     ns2.lantian.ster.
+0.1.0.0                                                IN    NS     ns3.lantian.ster.
+0.1.0.0                                                IN    NS     ns4.lantian.ster.
+0.1.0.0                                                IN    NS     ns5.lantian.ster.
+0.1.0.0                                                IN    DS     11807 13 1 6B42025140C9BBDDA0460429B5641651B1553D78
+0.1.0.0                                                IN    DS     11807 13 2 BBADC27B4EBFC90CBA79F4E69E4F167B9FFAF664B071F4CC46196902054B0910
+0.1.0.0                                                IN    DS     11807 13 4 CB48D8BABA0E44B9D363D3142463014EBDE6D28E15997EA8FB5FDBD42FDCF1CF3846E63925A5910DDD6A192571AEBD93
+
+0.3.0.0                                                IN    NS     ns1.iwarp.ster.
+
+7.0.0.0                                                IN    NS     ns1.staph.ster.
+
+7.2.1.0                                                IN    NS     ns1.yura.dn42.
+7.2.1.0                                                IN    NS     ns2.yura.dn42.
+
+6.6.a.a                                                IN    NS     ns1.potato.ster.
+6.6.a.a                                                IN    NS     ns2.potato.ster. 
+6.6.a.a                                                IN    NS     ns3.potato.ster.
+6.6.a.a                                                IN    DS     31105 7 2 CA2C41EA47978F1728FE49778CDC2882AD2725E23081AE72F7D2ECE5FF95E20D
+
+8.8.4.1                                                IN    NS     ns1.bear.ster.
+
+c.c.0.0                                                IN    NS     ns1.an.dn42.
+
+9.9.0.0                                                IN    NS     ns1.tsingyao.ster.
+9.9.0.0                                                IN    NS     ns2.tsingyao.ster.
+
+3.2.0.0                                                IN    NS     ns.leedagee.ster.
+
+f.0.0.e                                                IN    NS     ns.kskb.ster.
+
+5.4.0.0                                                IN    NS     ns0.hmn.ster.
+2.0.0.7.2.0.0                                          IN    NS     ns0.hmn.ster.
+
+6.8.1.0                                                IN    NS     ns1.186526.dn42.
+6.8.1.0                                                IN    NS     ns2.186526.dn42.
+
+0.8.0.0                                                IN    NS     ns.hanako.ster.
+
+9.3.0.0                                                IN    NS     lb.ns.saru.ster.
+9.3.0.0                                                IN    DS     57464 13 2 B9FA37834CD039D84856C12BAA2E1BDF6968D5AB40D60510AEB64ACC5E6B051E
+
+7.7.8.1                                                IN    NS     anycast.luna.ster.
+7.7.8.1                                                IN    NS     anycast.lily.dn42.
+
+1.3.c.f                                                IN    NS     ns1.bandura.ster.
+1.3.c.f                                                IN    DS     23486 15 2 AD11FF63F805D6E85CE4D85965C73339D9CC0619676B481A8647D9724BBC6182
+
+7.3.0.0                                                IN    NS     ns.syc.ster.
+
+2.3.0.2                                                IN    NS     ns.razu.ster.
+
+6.6.0.0                                                IN    NS     ns1.wtm.ster.
+6.6.0.0                                                IN    NS     ns2.wtm.ster.
+
+7.1.2.0                                                IN    NS     ns1.hawkins.ster.
+7.1.2.0                                                IN    NS     ns2.hawkins.ster.
+
+; AUTOGENERATED
+
+; dnskey
+@ IN DNSKEY 257 3 13 sI90N0KcwXtpqNDmsagKH/761EzsjSlGyYxx338qRrDlzRwXQPG6bO1m HoTdnKrWBcd1JqYM0/tgDXKep7dJgA==
+@ IN DNSKEY 256 3 13 fu+4con6sb7biVu866tpzq0w6IeFZWTlXSikshue3G26ftLMU0jz5tVV dqOMHP+CpXz9y0kQ6lOHmIlCzi4pAA==
+@ IN DNSKEY 257 3 15 aneEeuuJL47gPJJzT6ZbOgB9HlKpQmkkPNJNvK2z1pI=
+@ IN DNSKEY 256 3 15 kWjvF2OneQhWQtosxqnqAuBNyDAXG8qDQ2gi6ziPyIo=
+
+; AUTOGENERATED
+
+; dnskey
+@ IN DNSKEY 257 3 13 sI90N0KcwXtpqNDmsagKH/761EzsjSlGyYxx338qRrDlzRwXQPG6bO1m HoTdnKrWBcd1JqYM0/tgDXKep7dJgA==
+@ IN DNSKEY 256 3 13 fu+4con6sb7biVu866tpzq0w6IeFZWTlXSikshue3G26ftLMU0jz5tVV dqOMHP+CpXz9y0kQ6lOHmIlCzi4pAA==
+@ IN DNSKEY 257 3 15 aneEeuuJL47gPJJzT6ZbOgB9HlKpQmkkPNJNvK2z1pI=
+@ IN DNSKEY 256 3 15 kWjvF2OneQhWQtosxqnqAuBNyDAXG8qDQ2gi6ziPyIo=

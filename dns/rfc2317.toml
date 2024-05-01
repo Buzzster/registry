@@ -1,0 +1,18 @@
+["10.54.8.64/26"]
+NS = ["ns1.jerry.ster.", "ns2.jerry.ster.", "ns3.jerry.ster."]
+TTL = -1
+
+["10.54.8.192/26"]
+NS = ["ns1.jerry.ster.", "ns2.jerry.ster.", "ns3.jerry.ster."]
+
+["10.54.18.0/27"]
+NS = ["ns1.jerry.ster.", "ns2.jerry.ster.", "ns3.jerry.ster."]
+
+["10.54.8.160/27"]
+NS = ["ns1.staph.ster."]
+
+["10.54.8.128/29"]
+NS = ["ns.leedagee.ster."]
+
+["10.54.27.24/29"]
+NS = ["ns0.hmn.ster."]
